@@ -1,106 +1,262 @@
-#title {
-    color: black;
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    font-weight: 600;
-    border-bottom: 5px solid #C084FC;
-    width: fit-content;
-    margin: 15px auto;
-    padding-bottom: 8px;
-}
+/* ================= GENERAL ================= */
 
 body {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
     background-color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
+
+#title {
+    color: #1f2f57;
+    font-family: Georgia, serif;
+    font-size: 4.25rem;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: #1f2f57;
+    font-size: 2rem;
+}
+
+p {
+    color: #1f2f57;
+    line-height: 1.8;
+}
+
+/* ================= NAVIGATION ================= */
 
 nav {
     text-align: right;
     padding: 15px;
     border-bottom: 2px solid #EDE9FF;
+    margin-bottom: 30px;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
-    margin-left: 20px;
-    font-weight: normal;
+    color: #1f2f57;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 nav a:hover {
     color: #C084FC;
 }
 
-h1 {
+nav a.active {
+    color: #A78BFA;
+    border-bottom: 3px solid #A78BFA;
+    padding-bottom: 4px;
+}
+
+/* ================= HOME PAGE ================= */
+
+.subtitle {
     text-align: center;
+    color: #1f2f57;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
-h2 {
-    color: black;
-    border-bottom: 2px solid #C084FC;
-    padding-bottom: 5px;
-    display: inline-block;
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
-h3 {
-    text-align: center;
-    color: #666666;
-    font-weight: normal;
+.intro-text {
+    flex: 2;
 }
 
-p {
-    line-height: 1.6;
+.intro-paragraph {
+    text-align: left;
+    font-size: 1.35rem;
+    color: #1f2f57;
 }
 
-img {
-    width: 250px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 380px;
+    height: auto;
+    border-radius: 15px;
     border: 3px solid #C084FC;
 }
 
-.linkedin-pic {
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #C084FC;
-}
-
-.linkedin-button {
-    display: block;
-    width: fit-content;
-    margin: 20px auto;
-    padding: 12px 20px;
-    background-color: #C084FC;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: normal;
-}
-
-.linkedin-button:hover {
-    background-color: #A855F7;
-}
 blockquote {
-    text-align: center;
-    font-style: italic;
-    color: #555555;
-    max-width: 700px;
+    font-family: Georgia, serif;
+    font-size: 2.4rem;
+    color: #1f2f57;
+    line-height: 1.35;
+    text-align: left;
+    max-width: 900px;
     margin: 30px auto;
-    line-height: 1.8;
-    font-size: 1.05rem;
 }
 
 blockquote strong {
-    color: #C084FC;
-    font-style: normal;
+    display: block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #1f2f57;
+    font-weight: 700;
 }
+
+/* ================= HOBBIES ================= */
+
+.hobbies {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    width: 450px;
+    padding: 20px;
+    background-color: #FAF5FF;
+    border: 2px solid #E9D5FF;
+    border-radius: 20px;
+}
+
+.interest-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.hobby-card h3 {
+    font-family: Georgia, serif;
+    color: #1f2f57;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hobby-card p {
+    color: #1f2f57;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/* ================= ABOUT ME PAGE ================= */
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.about-left {
+    width: 380px;
+    background-color: #F3E8FF;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.about-photo {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid #C084FC;
+}
+
+.about-quote {
+    margin-top: 25px;
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    color: #1f2f57;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.about-quote strong {
+    display: block;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.about-right #title {
+    text-align: left;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.about-right h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.about-right p {
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #1f2f57;
+}
+
+/* ================= RESEARCH PAGE ================= */
+
+.research-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.research-content #title {
+    text-align: center;
+}
+
+.research-content h2 {
+    text-align: center;
+    color: #1f2f57;
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.research-content p {
+    text-align: left;
+    color: #1f2f57;
+    font-size: 1.3rem;
+    line-height: 1.9;
+}
+
+.research-image-box {
+    width: 80%;
+    margin: 60px auto;
+    background-color: #F3E8FF;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.research-image {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    border: 3px solid #C084FC;
+}
+
+/* ================= RESUME ================= */
+
 iframe {
     border: 3px solid #C084FC;
     border-radius: 10px;
