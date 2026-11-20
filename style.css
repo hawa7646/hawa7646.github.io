@@ -264,17 +264,7 @@ iframe {
 }
 /* ================= MOBILE ================= */
 
-@media (max-width: 768px) {
-
-    nav {
-        text-align: center;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 10px;
-        font-size: 1rem;
-    }
+@media screen and (max-width: 768px) {
 
     #title {
         font-size: 3rem;
@@ -282,30 +272,37 @@ iframe {
 
     .subtitle {
         font-size: 1.2rem;
+        margin-bottom: 20px;
     }
 
     .intro-section {
         flex-direction: column;
-        text-align: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     .intro-text {
         width: 100%;
     }
 
-    .intro-paragraph {
+    .intro-image {
+        width: 100%;
         text-align: center;
     }
 
     .intro-image img {
-        width: 90%;
+        width: 85%;
         max-width: 350px;
     }
 
     blockquote {
         font-size: 1.8rem;
         text-align: center;
+        max-width: 100%;
+    }
+
+    .intro-paragraph {
+        text-align: center;
+        font-size: 1.1rem;
     }
 
     .hobbies {
@@ -314,20 +311,17 @@ iframe {
     }
 
     .hobby-card {
-        width: 90%;
+        width: 100%;
+        max-width: 500px;
     }
 
     .about-container {
         flex-direction: column;
-        align-items: center;
     }
 
     .about-left {
-        width: 90%;
-    }
-
-    .about-right {
         width: 100%;
+        box-sizing: border-box;
     }
 
     .about-right #title {
@@ -339,23 +333,8 @@ iframe {
         text-align: center;
     }
 
-    .about-right p {
-        font-size: 1.1rem;
-    }
-
     .research-image-box {
-        width: 95%;
-    }
-
-    .research-content h2 {
-        font-size: 1.7rem;
-    }
-
-    .research-content p {
-        font-size: 1.1rem;
-    }
-
-    iframe {
-        height: 700px;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
