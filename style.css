@@ -262,3 +262,100 @@ iframe {
     border-radius: 10px;
     margin-top: 20px;
 }
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+        font-size: 1rem;
+    }
+
+    #title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .intro-paragraph {
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    blockquote {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .hobbies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby-card {
+        width: 90%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left {
+        width: 90%;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .about-right #title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .about-right h2 {
+        text-align: center;
+    }
+
+    .about-right p {
+        font-size: 1.1rem;
+    }
+
+    .research-image-box {
+        width: 95%;
+    }
+
+    .research-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .research-content p {
+        font-size: 1.1rem;
+    }
+
+    iframe {
+        height: 700px;
+    }
+}
