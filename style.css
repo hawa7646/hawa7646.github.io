@@ -338,3 +338,16 @@ iframe {
         box-sizing: border-box;
     }
 }
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    margin-top: 75px;
+    padding-top: 25px;
+    border-top: 2px solid #E9D5FF;
+}
+
+footer p {
+    color: #1f2f57;
+    font-size: 0.95rem;
+}
