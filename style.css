@@ -120,13 +120,17 @@ blockquote strong {
 
 .hobbies {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 .hobby-card {
-    width: 450px;
+    flex: 1;
+    max-width: 420px;
     padding: 20px;
     background-color: #FAF5FF;
     border: 2px solid #E9D5FF;
@@ -144,13 +148,20 @@ blockquote strong {
     color: #1f2f57;
     font-size: 2rem;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .hobby-card p {
     color: #1f2f57;
     font-size: 1.2rem;
     text-align: left;
+}
+
+.about-right h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* ================= ABOUT ME PAGE ================= */
@@ -202,9 +213,10 @@ blockquote strong {
 }
 
 .about-right h2 {
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .about-right p {
@@ -350,4 +362,21 @@ footer {
 footer p {
     color: #1f2f57;
     font-size: 0.95rem;
+}
+
+.hobbies-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #1f2f57;
+    font-size: 3rem;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.hobbies {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 80px;
+    width: 100%;
 }
